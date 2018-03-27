@@ -6,4 +6,4 @@ const ExpenseDashboardPage = () => (
   </div>
 );
 
-export ExpenseDashboardPage;
+export default ExpenseDashboardPage;
