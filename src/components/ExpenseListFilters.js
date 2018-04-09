@@ -12,7 +12,7 @@ import {
 export class ExpenseListFilters extends React.Component {
 
   state = {
-    calendarFocus: null
+    calendarFocused: null
   }
 
   onDatesChange = ({ startDate, endDate }) => {
@@ -20,8 +20,8 @@ export class ExpenseListFilters extends React.Component {
     this.props.setEndDate(endDate);
   }
 
-  onFocusChange = (calendarFocus) => {
-    this.setState({ calendarFocus });
+  onFocusChange = (calendarFocused) => {
+    this.setState({ calendarFocused });
   }
 
   onTextChange = (e) => {
@@ -56,7 +56,7 @@ export class ExpenseListFilters extends React.Component {
           startDate={this.props.filters.startDate}
           endDate={this.props.filters.endDate}
           onDatesChange={this.onDatesChange}
-          focusedInput={this.state.calendarFocus}
+          focusedInput={this.state.calendarFocused}
           onFocusChange={this.onFocusChange}
           showClearDates={true}
           numberOfMonths={1}
