@@ -24,10 +24,6 @@ test('should render EditExpensePage', () => {
 });
 
 test('should handle onSubmit for edit', () => {
-  const updates = {
-    description: 'Updated description'
-  };
-
   wrapper.find('ExpenseForm').prop('onSubmit')(expenses[2]);
   expect(historySpy.push).toHaveBeenLastCalledWith('/')
   expect(editExpenseSpy).toHaveBeenLastCalledWith(expenses[2].id, expenses[2])
