@@ -1,5 +1,6 @@
 .DS_STORE
-node_modules
+node_modules/
+public/dist/
 *~
 *.pyc
 .grunt
@@ -22,5 +23,3 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
-public/bundle.js*
-public/styles.css*
