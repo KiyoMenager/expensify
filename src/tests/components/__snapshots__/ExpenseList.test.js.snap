@@ -19,7 +19,7 @@ exports[`should render ExpenseList with expenses 1`] = `
     note=""
   />
   <Component
-    amount={109500}
+    amount={100000}
     createdAt={-345600000}
     description="Rent"
     id="2"
