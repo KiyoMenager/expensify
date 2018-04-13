@@ -15,3 +15,13 @@ export const ExpensesSummary = ({expensesCount, expensesTotal}) => {
     </div>
   );
 };
+
+const mapStateToProps = (state) => {
+  const visibleExpenses = selectExpenses(state.expenses, state.filters);
+  return {
+    expensesCount: visibleExpenses.length,
+    expensesTotal: selectTotalExpenses(visibleExpenses)
+  };
+};
+
+export default connect(mapStateToProps)(ExpensesSummary);
