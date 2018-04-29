@@ -1,6 +1,6 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
-import PrivateRoute from './PrivateRouter';
+import PrivateRoute from './PrivateRoute';
 import createHistory from 'history/createBrowserHistory';
 import LoginPage from '../components/LoginPage';
 import AddExpensePage from '../components/AddExpensePage';
