@@ -1,0 +1,22 @@
+.box-layout {
+  background: url('/images/bg.jpg');
+  background-size: cover; // makes sure background cover the entire container
+  display: flex;
+  align-items: center; // flex: center children vertically
+  justify-content: center; // flex: center children horizontally
+  height: 100vh;
+  width: 100vw;
+}
+
+.box-layout__box {
+  background: fade-out(white, .15); // A bit of transparancy
+  border-radius: 3px;
+  padding: $l-size $m-size; // add padding against parent container
+  text-align: center; // center everything within the box
+  width: 25rem; // width of the box
+}
+
+.box-layout__title {
+  margin: 0 0 $m-size 0;
+  line-height: 1;
+}
