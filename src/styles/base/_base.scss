@@ -1,3 +1,10 @@
+// Universal selector to compute elements sizes from borders.
+// border-box => 50px -> 40 + 2x4padding + 2x1border
+// content-box => 50px -> 40 + 2x4padding + 2x1border
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
